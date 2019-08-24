@@ -1,0 +1,125 @@
+
+
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;;
+  -webkit-transform-style: preserve-3d;
+  background: url('mars.jpg') repeat-x;
+  background-size: auto 100%;
+  -webkit-animation: move-map 900s infinite linear;
+  -moz-animation: move-map 900s infinite linear;
+  -o-animation: move-map 900s infinite linear;
+  -ms-animation: move-map 900s infinite linear;
+  animation: move-map 900s infinite linear;
+}
+
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ball:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(0);
+  opacity: 0.3;
+  
+}
+
+.ball .shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateX(90deg) translateZ(-150px);
+  -moz-transform: rotateX(90deg) translateZ(-150px);
+  -ms-transform: rotateX(90deg) translateZ(-150px);
+  -o-transform: rotateX(90deg) translateZ(-150px);
+  transform: rotateX(90deg) translateZ(-150px);
+  z-index: -1;
+}
+body {
+  width: 1600px;
+  margin: 0px auto;
+  background-repeat: no-repeat;
+}
+
+.stage {
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  display: inline-block;
+  margin: 0px;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -ms-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  -ms-perspective-origin: 50% 50%;
+  -o-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+
+@-moz-keyframes move-map {
+  0% {
+    background-position: 14139px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@-webkit-keyframes move-map {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: 14139px 0; }
+}
+
+
+@-o-keyframes move-map {
+  0% {
+    background-position: 14139px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@-ms-keyframes move-map {
+  0% {
+    background-position: 14139px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@keyframes move-map {
+  0% {
+    background-position: 14139px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+#nombre {
+  position: absolute;
+  color: white;
+  margin-left: 40px;
+  font-family: sans-serif;
+  font-size: 24px;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* {
+  border: 1px dashed white;
+}*/
